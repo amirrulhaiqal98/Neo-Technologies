@@ -276,3 +276,18 @@ counters.forEach((counter) => {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true, // Enable loop mode
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+});
