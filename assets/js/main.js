@@ -272,3 +272,7 @@ counters.forEach((counter) => {
   };
   updateCounter();
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
