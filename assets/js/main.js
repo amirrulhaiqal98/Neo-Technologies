@@ -106,6 +106,19 @@
     onscroll(document, toggleBacktotop)
   }
 
+  let backtotop2 = select('.back-to-top-2')
+  if (backtotop2) {
+    const togglebacktotop2 = () => {
+      if (window.scrollY > 100) {
+        backtotop2.classList.add('active')
+      } else {
+        backtotop2.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', togglebacktotop2)
+    onscroll(document, togglebacktotop2)
+  }
+
   /**
    * Mobile nav toggle
    */
