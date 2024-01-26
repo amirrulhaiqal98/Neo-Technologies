@@ -915,7 +915,7 @@ section {
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.services .icon-box h3 a {
   color: #37517e;
   transition: ease-in-out 0.3s;
 }
