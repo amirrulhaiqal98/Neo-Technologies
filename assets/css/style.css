@@ -1901,4 +1901,34 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+
+  .back-to-top-2 {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 10px;
+    bottom: 80px;
+    z-index: 996;
+    /* background: white; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    transition: all 0.8s;
+  }
+  
+  .back-to-top-2 i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top-2:hover {
+    background: #37517e;
+    color: #fff;
+  }
+  
+  .back-to-top-2.active {
+    visibility: visible;
+    opacity: 1;
+  }
 }
