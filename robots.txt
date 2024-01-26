@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Disallow: /admin/
+Disallow: /user/
+Disallow: /private/
+Disallow: /*?page=
+Disallow: /*&page=
