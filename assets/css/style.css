@@ -1268,6 +1268,16 @@ section {
   margin-left: 8px;
 }
 
+.member {
+  margin-right: 10px; /* Adjust the margin to add space between members */
+  margin-left: 10px; /* Adjust the margin to add space between members */
+}
+
+/* Optional: To avoid margin on the last member in a container */
+.member:last-child {
+  margin-right: 10px;
+}
+
 @media (max-width: 768px) {
 /* Default styles for larger screens */
 .member-container {
@@ -1288,6 +1298,15 @@ section {
   }
 }
 
+.member {
+  margin-right: 10px; /* Adjust the margin to add space between members */
+  margin-left: 10px; /* Adjust the margin to add space between members */
+}
+
+/* Optional: To avoid margin on the last member in a container */
+.member:last-child {
+  margin-right: 10px;
+}
 
 }
 
