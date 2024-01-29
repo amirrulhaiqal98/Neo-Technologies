@@ -222,6 +222,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .navbar .getstarted:hover {
   color: #fff;
   background: #31a9e1;
@@ -527,9 +535,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   #hero {
-    height: 100vh;
+    height: 115vh;
     text-align: center;
   }
 }

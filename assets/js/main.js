@@ -270,21 +270,31 @@
 })()
 
 //js for counting number at rating
+
 const counters = document.querySelectorAll(".counter");
 
 counters.forEach((counter) => {
-  counter.innerText = "0";
+  const target = +counter.getAttribute("data-target");
+  const increment = target / 200;
+
   const updateCounter = () => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
-    const increment = target / 200;
+    let count = +counter.innerText.replace(/,/g, ""); // Remove commas for the calculation
     if (count < target) {
-      counter.innerText = `${Math.ceil(count + increment)}`;
-      setTimeout(updateCounter, 1);
-    } else counter.innerText = target;
+      count = Math.ceil(count + increment);
+      counter.innerText = numberWithCommas(count);
+      setTimeout(updateCounter, 5);
+    } else {
+      counter.innerText = numberWithCommas(target);
+    }
   };
+
   updateCounter();
 });
+
+// Function to add commas to a number
+function numberWithCommas(number) {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
