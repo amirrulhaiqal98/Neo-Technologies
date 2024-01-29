@@ -487,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: 115vh;
     text-align: center;
   }
   #hero .animated {
@@ -524,6 +524,13 @@ h1, h2, h3, h4, h5, h6 {
   #hero .btn-get-started {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
   }
 }
 
@@ -1204,12 +1211,20 @@ section {
 
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
+  width: 100px;
   border-radius: 50%;
 }
 
+/* .team .member .pic img {
+  transition: ease-in-out 0.3s;
+} */
+
 .team .member .pic img {
   transition: ease-in-out 0.3s;
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 50%;
 }
 
 .team .member:hover {
@@ -1217,7 +1232,7 @@ section {
 }
 
 .team .member .member-info {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .team .member h4 {
@@ -1247,8 +1262,8 @@ section {
 }
 
 .team .member p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
+  margin: 15px 0 0 0;
+  font-size: 10px;
 }
 
 .team .member .social {
@@ -1287,39 +1302,16 @@ section {
   margin-left: 8px;
 }
 
-.member {
-  margin-right: 10px; /* Adjust the margin to add space between members */
-  margin-left: 10px; /* Adjust the margin to add space between members */
-}
-
-/* Optional: To avoid margin on the last member in a container */
-.member:last-child {
-  margin-right: 10px;
-}
-
-@media (max-width: 768px) {
-/* Default styles for larger screens */
+/* CSS for the slider content */
 .member-container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  justify-content: space-between; /* Adjust this based on your design preference */
 }
 
 .member {
-  flex: 0 0 calc(33.33% - 10px); /* Adjust the width of each item based on the desired spacing */
-  margin: 0 5px; /* Adjust the margin to create space between items */
-}
-
-/* Media query for mobile views */
-@media (max-width: 767px) {
-  .member {
-    flex: 0 0 100%; /* Make each item take up the full width on smaller screens */
-    margin: 0 0 15px; /* Add space between items */
-  }
-}
-
-.member {
-  margin-right: 10px; /* Adjust the margin to add space between members */
-  margin-left: 10px; /* Adjust the margin to add space between members */
+  flex: 1; /* This will make each .member box take up equal space */
+  margin: 0 10px; /* Add margin between boxes (adjust as needed) */
+  box-sizing: border-box; /* Include padding and border in the box's total width and height */
 }
 
 /* Optional: To avoid margin on the last member in a container */
@@ -1327,6 +1319,20 @@ section {
   margin-right: 10px;
 }
 
+/* Media query for smaller screens (adjust as needed) */
+@media only screen and (max-width: 768px) {
+  .member-container {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+  }
+
+  .member {
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  /* Optional: To avoid margin on the last member in a container */
+  .member:last-child {
+    margin-right: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
