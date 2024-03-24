@@ -269,27 +269,47 @@
 
 })()
 
-//js for counting number at rating
+// Get the rating section element
+const ratingSection = document.getElementById('rating');
 
-const counters = document.querySelectorAll(".counter");
+// Create a new Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, { root: null, rootMargin: '0px', threshold: 0.5 });
 
-counters.forEach((counter) => {
-  const target = +counter.getAttribute("data-target");
-  const increment = target / 200;
+// Observe the rating section
+observer.observe(ratingSection);
 
-  const updateCounter = () => {
-    let count = +counter.innerText.replace(/,/g, ""); // Remove commas for the calculation
-    if (count < target) {
-      count = Math.ceil(count + increment);
-      counter.innerText = numberWithCommas(count);
-      setTimeout(updateCounter, 5);
-    } else {
-      counter.innerText = numberWithCommas(target);
+// Flag to track if the counting animation has already been triggered
+let countingAnimationTriggered = false;
+
+// Function to handle the intersection event
+function handleIntersection(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !countingAnimationTriggered) {
+      countingAnimationTriggered = true;
+
+      // Start the counting animation
+      const counters = document.querySelectorAll(".counter");
+
+      counters.forEach((counter) => {
+        const target = +counter.getAttribute("data-target");
+        const increment = target / 250;
+
+        const updateCounter = () => {
+          let count = +counter.innerText.replace(/,/g, ""); // Remove commas for the calculation
+          if (count < target) {
+            count = Math.ceil(count + increment);
+            counter.innerText = numberWithCommas(count);
+            setTimeout(updateCounter, 5);
+          } else {
+            counter.innerText = numberWithCommas(target);
+          }
+        };
+
+        updateCounter();
+      });
     }
-  };
-
-  updateCounter();
-});
+  });
+}
 
 // Function to add commas to a number
 function numberWithCommas(number) {
