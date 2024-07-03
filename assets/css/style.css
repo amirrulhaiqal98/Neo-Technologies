@@ -707,15 +707,23 @@ section {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+
+
 #about .trade-btn {
-  background-color: #47b2e4;
-  color: white;
-  transition: background-color 0.5s ease;
+  color: #ffffff;
+  background-color: #37517e;
+  border-color: #37517e;
+  border-radius: 5px;
+  margin-top: 20px;
+  /* animation: up-down 5s ease-in-out infinite alternate-reverse both; */
+
 }
 
 #about .trade-btn:hover {
-  background-color: #63c2f5; /* Brighter shade of the original color */
-  color: white; /* Ensure text color remains black */
+  color: #ffffff;
+  background-color: #212529;
+  border-color: #212529;
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------
