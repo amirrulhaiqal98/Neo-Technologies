@@ -703,11 +703,11 @@ section {
   text-decoration: none;
 }
 
-#about .animated {
+.about .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-#about .trade-btn {
+.about .trade-btn {
   color: #ffffff;
   background-color: #37517e;
   border-color: #37517e;
