@@ -707,6 +707,17 @@ section {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#about .trade-btn {
+  background-color: #47b2e4;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+#about .trade-btn:hover {
+  background-color: #63c2f5; /* Brighter shade of the original color */
+  color: white; /* Ensure text color remains black */
+}
+
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
