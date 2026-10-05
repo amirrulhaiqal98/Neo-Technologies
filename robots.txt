@@ -7,3 +7,5 @@ Disallow: /user/
 Disallow: /private/
 Disallow: /*?page=
 Disallow: /*&page=
+
+Sitemap: https://techrecycle.com.my/sitemap.xml

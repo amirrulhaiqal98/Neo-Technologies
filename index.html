@@ -4,11 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="google-site-verification" content="7S8jORuhrOhTyTXr4yuOCSy1ZQHIKeYb8VsR1nPJki8">
 
-  <title>Laptop Trade-In Service Malaysia | Tech Recycle</title>
-  <meta content="Turn your used laptop into cash. Hassle-free service to buy your old device. Sell to us today!"
+  <title>Laptop Trade-In Malaysia | Tech Recycle by Mechanize</title>
+  <meta content="Sell or trade in your used laptop with Tech Recycle, operated by Mechanize in Sunway, Petaling Jaya. WhatsApp quotes, shop visits, pickup and courier available."
     name="description">
-  <meta content="" name="keywords">
+  <link rel="canonical" href="https://techrecycle.com.my/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tech Recycle by Mechanize">
+  <meta property="og:title" content="Laptop Trade-In Malaysia | Tech Recycle by Mechanize">
+  <meta property="og:description" content="Sell or trade in your used laptop with Tech Recycle, operated by Mechanize in Sunway, Petaling Jaya. Ask our team about quotes, shop visits, pickup and courier.">
+  <meta property="og:url" content="https://techrecycle.com.my/">
 
   <!-- Bootstrap CSS -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
@@ -29,8 +36,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
   <!-- Favicons -->
-  <link href="assets/img/neotech-logo-new2.png" alt="VTrade Tech Logo" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/neotech-logo-new2.png" rel="icon">
+  <link href="assets/img/neotech-logo-new2.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -49,6 +56,29 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style id="mechanize-service-styles">
+/* Tech Recycle and Mechanize service information. */
+#header .logo { line-height: 1.25; }
+#header .logo span { display: block; font-size: 12px; letter-spacing: 1.5px; margin-top: 4px; }
+#hero { height: auto; min-height: 680px; padding-bottom: 48px; }
+#hero .hero-description { color: #fff; font-size: 22px; line-height: 1.5; margin: 8px 0 16px; }
+#hero .hero-detail { color: #e4edf9; font-size: 17px; line-height: 1.6; margin-bottom: 18px; }
+#hero .hero-links { color: #fff; font-size: 15px; line-height: 1.8; }
+#hero .hero-links a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.selling-steps { max-width: 840px; margin: 24px auto 0; padding-left: 24px; line-height: 1.7; }
+.selling-steps li { margin-bottom: 12px; }
+.faq .faq-list p a { display: inline; padding: 0; font-size: inherit; font-family: inherit; }
+@media (max-width: 991px) {
+  #hero { min-height: 0; }
+  #hero .hero-description { font-size: 19px; }
+}
+@media (max-width: 575px) {
+  #hero .hero-detail { font-size: 16px; }
+  #hero .hero-links span { display: none; }
+  #hero .hero-links a { display: block; }
+}
+  </style>
+
   <!-- Template Swiper File -->
   <link href="assets/css/swiper.css" rel="stylesheet">
 
@@ -65,18 +95,67 @@
 
   <!-- Event snippet for WhatsApp Clicks conversion page -->
   <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof (url) != 'undefined') {
-          window.location = url;
+    function gtag_report_conversion() {
+      // Tracking must never prevent the customer's normal link from opening.
+      try {
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-11547195244/3TXdCL25uYIcEOzukIIr',
+            'transport_type': 'beacon'
+          });
         }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-11547195244/3TXdCL25uYIcEOzukIIr',
-        'event_callback': callback
-      });
-      return false;
+      } catch (error) {
+        // Continue to WhatsApp if analytics is blocked or unavailable.
+      }
+      return true;
     }
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Brand",
+      "@id": "https://techrecycle.com.my/#brand",
+      "name": "Tech Recycle",
+      "alternateName": "Tech Recycle by Mechanize",
+      "url": "https://techrecycle.com.my/"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.mechanize.my/#organization",
+      "name": "Mechanize",
+      "url": "https://www.mechanize.my/",
+      "telephone": "+60182936685",
+      "brand": {
+        "@id": "https://techrecycle.com.my/#brand"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://techrecycle.com.my/#website",
+      "url": "https://techrecycle.com.my/",
+      "name": "Tech Recycle by Mechanize",
+      "alternateName": "Tech Recycle",
+      "publisher": {
+        "@id": "https://www.mechanize.my/#organization"
+      },
+      "inLanguage": "en-MY"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://techrecycle.com.my/#laptop-trade-in",
+      "name": "Tech Recycle used laptop buyback and trade-in",
+      "serviceType": "Used laptop buyback and trade-in",
+      "url": "https://techrecycle.com.my/",
+      "provider": {
+        "@id": "https://www.mechanize.my/#organization"
+      },
+      "description": "Laptop buyback and trade-in operated by Mechanize in Sunway Mentari, Petaling Jaya. Initial WhatsApp quotes, shop visits, pickup and courier by arrangement. Final offers are subject to inspection and agreement."
+    }
+  ]
+}
   </script>
 
 </head>
@@ -87,7 +166,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="/">TECH RECYCLE X MECHANIZE</a></h1>
+      <div class="logo me-auto"><a href="/">TECH RECYCLE <span>BY MECHANIZE</span></a></div>
       <!-- <a href="/" class="logo me-auto"><img src="assets/img/neotech-logo.jpg" alt="Neo Technologies Logo"></a> -->
 
       <nav id="navbar" class="navbar">
@@ -116,21 +195,24 @@
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
           data-aos="fade-up" data-aos-delay="200">
           <h1>Sell Us Your <br>Laptop Today</h1>
-          <h2>Turn your used laptop into cash. We offer a hassle-free service to buy your old device. Sell to us today!
-          </h2>
-          <h2>Get your laptop price now!</h2>
+          <p class="hero-description">Tech Recycle is operated by Mechanize in Sunway Mentari, Petaling Jaya.
+            Sell or trade in your used laptop with our team.</p>
+          <p class="hero-detail">Send your laptop details on WhatsApp for an initial quote. Visit our shop,
+            or ask us to arrange pickup or courier delivery.</p>
+          <p class="hero-links"><a href="https://www.mechanize.my/sell-used-laptop">Selling guide at Mechanize</a>
+            <span aria-hidden="true"> &middot; </span><a href="https://www.mechanize.my/jual-laptop-terpakai" lang="ms">Jual laptop terpakai (BM)</a></p>
           <!-- <h2>Any Model : DELL, HP, LENOVO, ASUS, ACER, APPLE & etc.</h2> -->
-          <div class="d-flex justify-content-center justify-content-lg-start">
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
             <a href="https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0"
-              onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0');"
-              class="btn-get-started scrollto mr-3" target="_blank">GET STARTED</a>
-            <a href="https://carousell.app.link/uw6pbxrVTKb" class="btn-get-started-carousel scrollto"
+              onclick="return gtag_report_conversion();"
+              class="btn-get-started mr-3" target="_blank" rel="noopener">GET STARTED</a>
+            <a href="https://carousell.app.link/uw6pbxrVTKb" class="btn-get-started-carousel"
               data-toggle="tooltip" data-placement="top" title="Discover the Perfect Laptop for You"
-              target="_blank">Explore Laptop Options ></a>
-            <!-- <a href="#about" class="btn-get-started scrollto mr-3">Get Started</a> -->
+              target="_blank" rel="noopener">Explore Laptop Options ></a>
+            <!-- <a href="#about" class="btn-get-started mr-3">Get Started</a> -->
           </div>
           <!-- <div class="d-flex justify-content-center justify-content-lg-start">
-              <a href="https://carousell.app.link/0LBV9b3PyGb" class="btn-get-started-carousel scrollto" data-toggle="tooltip" data-placement="top" title="Discover the Perfect Laptop for You ">Explore Laptop Options ></a>
+              <a href="https://carousell.app.link/0LBV9b3PyGb" class="btn-get-started-carousel" data-toggle="tooltip" data-placement="top" title="Discover the Perfect Laptop for You ">Explore Laptop Options ></a>
             </div> -->
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -180,7 +262,7 @@
     </section><!-- End Cliens Section -->
 
     <!-- ======= About Us Section ======= -->
-    <section id="about" id="hero" class="about">
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>What We Do</h2>
@@ -190,8 +272,12 @@
             <img src="assets/img/why-us.png" class="img-fluid animated" alt="" style="width: 90%; height: auto;">
           </div>
           <div class="col-lg-6">
-            <p> We are buying used laptop / other gadget in small or large amount. We also provide refurbished laptop
-              with under warranty. </p>
+            <p><strong>Tech Recycle is a laptop buyback and trade-in service operated by Mechanize.</strong>
+              We buy used laptops and other gadgets, individually or in batches, and offer refurbished laptops with warranty.</p>
+            <p>Meet our team at Unit 12, 1st Floor, Jalan PJS 8/6, Sunway Mentari, 46150 Petaling Jaya, Selangor.
+              You can also arrange pickup or send your device by courier. Confirm availability, any charges and
+              packing instructions with us before collection or posting.</p>
+            <p>Visit <a href="https://www.mechanize.my/">Mechanize's main website</a> for our current services and contact details.</p>
             <ul>
               <!-- <li>
                   <i class="ri-check-double-line"></i> Unlock the value of your used laptops and gadgets. We buy in small or large quantities, hassle-free. Explore our range of refurbished laptops with warranty.
@@ -207,12 +293,12 @@
               </li>
             </ul>
             <!-- Add the button here saasd-->
-            <!-- <a href="https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0" class="btn btn-primary mt-3 trade-btn" target="_blank">
+            <!-- <a href="https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0" class="btn btn-primary mt-3 trade-btn" target="_blank" rel="noopener">
                 Trade in Now
               </a> -->
             <a href="https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0"
-              onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0');"
-              class="btn trade-btn" target="_blank">
+              onclick="return gtag_report_conversion();"
+              class="btn trade-btn" target="_blank" rel="noopener">
               <i class="fa fa-chevron-center img-fluid animated"></i> TRADE IN NOW! </a>
           </div>
         </div>
@@ -265,7 +351,13 @@
         <div class="row">
           <div class="section-title">
             <h2>How it works</h2>
-            <p>Experience the Effortless Laptop Upgrade Journey</p>
+            <p>From an initial quote to inspection and an agreed offer.</p>
+            <ol class="selling-steps text-start">
+              <li><strong>Send your details:</strong> WhatsApp the brand, model, specifications, condition and photos of your laptop.</li>
+              <li><strong>Receive an initial quote:</strong> our team reviews the information and explains the next steps.</li>
+              <li><strong>Arrange an inspection:</strong> visit our Sunway shop, or confirm pickup or courier arrangements with the team.</li>
+              <li><strong>Review the final offer:</strong> the price depends on inspection and your agreement. Confirm the payment method and timing with us.</li>
+            </ol>
           </div>
           <div class="container">
             <article class="card">
@@ -292,7 +384,7 @@
                   </div>
                   <div class="step">
                     <span class="icon" data-toggle="tooltip" data-placement="top"
-                      title="We will pay you by instant transfer / cash with agreed price">4 <i
+                      title="After inspection and your agreement, confirm payment method and timing with our team">4 <i
                         class="fa fa-box animated"></i>
                     </span>
                     <span class="text">GET CASH</span>
@@ -301,8 +393,8 @@
                 <br>
                 <hr>
                 <a href="https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0"
-                  onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0');"
-                  class="btn btn-warning" data-abc="true" target="_blank">
+                  onclick="return gtag_report_conversion();"
+                  class="btn btn-warning" data-abc="true" target="_blank" rel="noopener">
                   <i class="fa fa-chevron-center img-fluid animated"></i> TRADE IN NOW! </a>
               </div>
             </article>
@@ -387,8 +479,8 @@
           <div class="col-lg-3 cta-btn-container text-center">
             <a class="cta-btn align-middle"
               href="https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0"
-              onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0');"
-              target="_blank">Trade-in Now !</a>
+              onclick="return gtag_report_conversion();"
+              target="_blank" rel="noopener">Trade-in Now !</a>
           </div>
         </div>
 
@@ -707,8 +799,9 @@
                 <i class="bx bx-chevron-up icon-close"></i>
               </a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p> We take your privacy seriously. Before refurbishing or recycling traded-in laptops, we ensure that
-                  all personal data is securely wiped following industry-standard data sanitization procedures. </p>
+                <p>Back up your files, sign out of personal accounts and remove your personal data before handing over
+                  your laptop. Remove account or activation locks that would prevent inspection. If you need help,
+                  ask our team about the available options before you sell.</p>
               </div>
             </li>
             <li data-aos="fade-up" data-aos-delay="500">
@@ -718,8 +811,28 @@
                 <i class="bx bx-chevron-up icon-close"></i>
               </a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p> Once the laptop is evaluated, we will provide you with the agreed-upon trade-in credit or payment
-                  method, which can be used towards your new purchase or provided as cash or store credit. </p>
+                <p>After inspection, our team confirms the final offer for your agreement. Ask us to confirm the payment
+                  method and expected timing for your device before proceeding; these are not a fixed turnaround guarantee.</p>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed" href="#faq-list-6" role="button" aria-expanded="false" aria-controls="faq-list-6">Is Tech Recycle part of Mechanize?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                <p>Yes. Tech Recycle is operated by Mechanize. Our shop is in Sunway Mentari, Petaling Jaya.
+                  Find our <a href="https://www.mechanize.my/sell-used-laptop">used laptop selling guide</a> on Mechanize's website,
+                  or read <a href="https://www.mechanize.my/jual-laptop-terpakai" lang="ms">panduan jual laptop terpakai dalam Bahasa Melayu</a>.</p>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed" href="#faq-list-7" role="button" aria-expanded="false" aria-controls="faq-list-7">Can I arrange pickup or send my laptop by courier?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                <p>Yes, pickup and courier delivery are available by arrangement. Contact our team first to confirm
+                  your location, availability, any charges and packing instructions. An initial quote is subject to
+                  inspection and your agreement to the final offer.</p>
               </div>
             </li>
           </ul>
@@ -743,15 +856,17 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <img src="assets/img/neotech-logo.jpg" alt="Neo Technologies Logo"
               style="width: 200px; height: auto; margin-bottom: 20px;">
-            <img src="assets/img/mechanize_logo.jpeg" alt="Neo Technologies Logo"
+            <img src="assets/img/mechanize_logo.jpeg" alt="Mechanize Logo"
               style="width: 200px; height: auto; margin-bottom: 20px;">
-            <p>
+            <p><strong>Tech Recycle by Mechanize</strong><br>
+              <a href="https://www.mechanize.my/">Mechanize main website</a><br><br>
               Neo Technologies (AS0460592-X)<br>
               Unit No. 12, 1st Floor, <br>
               Jalan PJS 8/6, Sunway Mentari, <br>
               46150 Petaling Jaya, <br>
               Selangor <br><br>
-              <strong>Phone:</strong> +601137855722<br>
+              <strong>Tech Recycle:</strong> <a href="tel:+601137855722">011-3785 5722</a><br>
+              <strong>Mechanize main line:</strong> <a href="tel:+60182936685">018-293 6685</a><br>
               <strong>Email:</strong> Mechanize79@gmail.com<br>
             </p>
           </div>
@@ -762,13 +877,13 @@
               individuals. Join the conversation and be a part of our journey. Connect with us today!</p>
             <div class="social-links mt-3">
               <a href="https://www.facebook.com/share/4ju472YeVHPAPa81/?mibextid=kFxxJD" class="facebook"
-                data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank"><i
+                data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener"><i
                   class="bx bxl-facebook"></i></a>
               <a href="https://carousell.app.link/9iVd8WSVTKb" class="carousel" data-toggle="tooltip"
-                data-placement="top" title="Carousel" target="_blank"><i class="bx bx-carousel"></i></a>
-              <!-- <a href="https://www.tiktok.com/@mechanize79?lang=en" class="tiktok" data-toggle="tooltip" data-placement="top" title="Tiktok" target="_blank"><i class="bx bxl-tiktok"></i></a> -->
+                data-placement="top" title="Carousel" target="_blank" rel="noopener"><i class="bx bx-carousel"></i></a>
+              <!-- <a href="https://www.tiktok.com/@mechanize79?lang=en" class="tiktok" data-toggle="tooltip" data-placement="top" title="Tiktok" target="_blank" rel="noopener"><i class="bx bxl-tiktok"></i></a> -->
               <a href="https://www.tiktok.com/@mechanize79?lang=en" class="tiktok" data-toggle="tooltip"
-                data-placement="top" title="Tiktok" target="_blank">
+                data-placement="top" title="Tiktok" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path
                     d="M12 2C13.1 2 14 2.9 14 4V4.08C14 4.68 14.32 5.22 14.88 5.55C15.77 6.07 16.85 6.31 17.91 6.24C18.32 6.22 18.63 6.53 18.63 6.94V10C18.63 10.56 18.19 11 17.63 11C16.31 11 15.12 10.52 14.2 9.7V14.14C14.2 18.16 11.16 21.28 7.14 21.92C6.71 21.99 6.38 21.65 6.46 21.23C7.19 17.47 10.2 14.65 14.2 14.14V4C14 3.34 13.66 2.75 13.18 2.32C12.68 1.87 12 1.55 11.3 1.41C11.1 1.37 10.9 1.35 10.7 1.33C10.45 1.3 10.2 1.26 9.95 1.24C9.5 1.2 9.05 1.19 8.61 1.19C5.59 1.19 2.82 2.36 1.13 4.32C1.01 4.46 1 4.66 1.12 4.8L1.13 4.81C1.24 4.93 1.43 4.95 1.57 4.83C3.12 3.49 5.24 2.78 7.33 2.78C8.73 2.78 10.08 3.26 11.13 4.14C11.68 4.58 12 5.27 12 6V2Z"
@@ -776,15 +891,15 @@
                 </svg>
               </a>
               <a href="https://www.instagram.com/mechanize79/" class="instagram" data-toggle="tooltip"
-                data-placement="top" title="Instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                data-placement="top" title="Instagram" target="_blank" rel="noopener"><i class="bx bxl-instagram"></i></a>
               <a href="mailto:afiqsales01@gmail.com" class="email" data-toggle="tooltip" data-placement="top"
-                title="Email" target="_blank">
+                title="Email" target="_blank" rel="noopener">
                 <i class="bx bx-mail-send"></i>
               </a>
 
               <a href="https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0"
-                onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0');"
-                class="whatsapp" data-toggle="tooltip" data-placement="top" title="Whatsapp" target="_blank"><i
+                onclick="return gtag_report_conversion();"
+                class="whatsapp" data-toggle="tooltip" data-placement="top" title="Whatsapp" target="_blank" rel="noopener"><i
                   class="bx bxl-whatsapp"></i></a>
             </div>
           </div>
@@ -798,7 +913,7 @@
         &copy; Copyright <strong><span>NEO TECHNOLOGIES</span></strong>. All Rights Reserved
       </div>
       <!-- <div class="credits">
-          Designed by <a href="https://github.com/amirrulhaiqal98" target="_blank">HaiqalLazim</a>
+          Designed by <a href="https://github.com/amirrulhaiqal98" target="_blank" rel="noopener">HaiqalLazim</a>
         </div> -->
 
 
@@ -810,10 +925,10 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
   <a href="https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0"
-    onclick="return gtag_report_conversion('https://api.whatsapp.com/send/?phone=601137855722&text=Hi+Mechanize%21+Saya+nak+Jual%2FTrade+In%2F+Beli+laptop%2F+PC%2F+Phone+%28Google%29&type=phone_number&app_absent=0');">
+    onclick="return gtag_report_conversion();">
     <img src="assets/img/team/malay-hijab.png"
       class="img-fluid back-to-top-2 d-flex align-items-center justify-content-center" data-toggle="tooltip"
-      data-placement="top" title="Need Help?" alt="" target="_blank">
+      data-placement="top" title="Need Help?" alt="" target="_blank" rel="noopener">
   </a>
 
   <!-- Vendor JS Files -->
